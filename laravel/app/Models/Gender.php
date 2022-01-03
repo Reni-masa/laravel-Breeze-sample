@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Prefecture extends Model
+class Gender extends Model
 {
     use HasFactory;
 
-    protected $table = 'prefectures'; // 都道府県
+    protected $table = 'genders'; // 性別
     public $timestamps = false;
 }
