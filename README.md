@@ -1,5 +1,27 @@
+# 開発setup
+```
+//プロジェクト取得
+$ git clone hogehoge
+
+// コンテナ立ち上げ
+$ docker-compose up -d --build
+
+// コンテナログイン
+$ docker exec -it [コンテナ名] bash
+$ docker exec -it php bash
+
+// phpパッケージインストール
+$ composer install
+
+// フロントモジュールインストール
+$ npm install
+$ npm run dev
+
+```
+
 # application setup
 ```
+// アプリケーション.env設定
 // DB接続設定 .envファイル
 DB_CONNECTION=pgsql
 DB_HOST=db
@@ -7,9 +29,10 @@ DB_PORT=5432
 DB_DATABASE=breeze_sample
 DB_USERNAME=admin
 DB_PASSWORD=password!1
- 
+
 // APP_KYEの設定
 $ php artisan key:generate
+
 ```
 
 # 開発時コマンド
